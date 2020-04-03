@@ -28,4 +28,4 @@ npm test
 
 # Autor
 
-*Kelly Alves.
+* Kelly Alves.
