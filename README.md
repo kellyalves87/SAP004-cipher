@@ -1,17 +1,31 @@
-# CodDecodeAki
+# Sobre o projeto
 
-Site pra codificar e decodificar sua senha com a cifra de César.
+Projeto para criar um site que codifique e decodifique senhas com a cifra de César.
 
-# Mas, o que é Cifra de César?
+# Sobre a Cifra de César
 
 A Cifra de César é uma técnica de criptografia na qual a letra de um texto a ser criptografado é substituída
 por outra letra presente no alfabeto, porém deslocada em um certo número de posições à esquerda ou à direita.
 
-# Usabilidade
+# Tecnologias utilizadas no projeto.
 
-No site, o usuário tem a opção de inserir a senha, quantidade de casas de que deseja pular para codificar ou decodificar a senha. Uma interface simples e intuitiva.
+*HTML
+*JavaScript
+*CSS
+*NodeJs
 
-# Sobre o projeto
+# Como rodar o projeto?
 
-A Cifra de César foi criada a partir das instruções da @Laboratória, usando HTML, JavaScript, CSS e NodeJs.
-Todo o projeto foi criado por @kellyalves87.
+```
+npm start
+```
+
+# Como testar o projeto?
+
+```
+npm test
+```
+
+# Autor
+
+*Kelly Alves.
