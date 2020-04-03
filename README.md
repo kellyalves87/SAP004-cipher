@@ -9,10 +9,10 @@ por outra letra presente no alfabeto, porém deslocada em um certo número de po
 
 # Tecnologias utilizadas no projeto.
 
-*HTML
-*JavaScript
-*CSS
-*NodeJs
+* HTML
+* JavaScript
+* CSS
+* NodeJs
 
 # Como rodar o projeto?
 
