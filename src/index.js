@@ -1,3 +1,26 @@
-import cipher from './cipher.js';
+import {encode, decode} from './cipher.js';
 
-console.log(cipher);
+let phrase = document.getElementById('senha');
+let alphabetAsc = document.getElementById('offset');
+let encodeBtn = document.getElementById('encode');
+let decodeBtn = document.getElementById('decode');
+
+encodeBtn.addEventListener('click', function(event){
+
+    event.preventDefault();
+    let textValue = encode(alphabetAsc.valueAsNumber, phrase.value);
+
+    document.getElementById('answerPassword').textContent = textValue;
+});
+
+
+decodeBtn.addEventListener('click', function(event){
+
+    event.preventDefault();
+    let textValue = decode(alphabetAsc.valueAsNumber, phrase.value);
+
+    document.getElementById('answerPassword').textContent = textValue;
+});
+
+
+

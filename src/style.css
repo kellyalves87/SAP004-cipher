@@ -1,0 +1,66 @@
+.html{
+    width: 100px;
+}
+
+body{
+    background: linear-gradient(#FF00FF, #4876FF);
+    font-family: 'Baloo Da 2', cursive;
+    color: #483D8B;    
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 24px;
+}
+
+input[type=text]{
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px black;
+    background: #FFF0F5;
+    border: 1px solid;
+    width: 100px;
+    padding: 0.3%;
+}
+
+textarea{
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px black;
+    background: #FFF0F5;
+    border: 1px solid;
+    padding: 0.3%;
+}
+
+input[type=number]{
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px black;
+    background: #FFF0F5;
+    border: 1px solid;
+    width: 100px;
+    padding: 0.3%;
+}
+
+#encode{
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px black;
+    background: #FFF0F5;
+    border: 1px solid;
+    width: 150px;
+    padding: 0.3%;
+    font-family: 'Baloo Da 2', cursive;
+    color: #551A8B;
+}
+
+#decode{
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px black;
+    background: #FFF0F5;
+    border: 1px solid;
+    width: 150px;
+    padding: 0.3%;
+    font-family: 'Baloo Da 2', cursive;
+    color: #551A8B;
+}
