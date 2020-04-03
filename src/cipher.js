@@ -1,6 +1,6 @@
-//função criada para trazer os parametros da codificação.
+const cipher = {
 
-function encode(offset, phrase) {
+  encode: (offset, phrase) => {
 
   let done = "";
 
@@ -15,11 +15,12 @@ function encode(offset, phrase) {
   }
 
   return done;
-}
+},
+
 
 //função criada para decodificar.
 
-function decode(offset, phrase){
+decode: (offset, phrase) => {
 
   let normalAlpha = phrase.toUpperCase();
   let doneD = "";
@@ -42,6 +43,8 @@ function decode(offset, phrase){
   
   return doneD;
 
+  }
+  
 }
 
-export { encode, decode };
+export default cipher;
