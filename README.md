@@ -16,6 +16,17 @@ por outra letra presente no alfabeto, porém deslocada em um certo número de po
 
 # Como rodar o projeto?
 
+Na primeira vez em que for rodar o projeto utilizar
+
+```
+npm install
+```
+
+```
+npm start
+```
+Para as próximas vezes, utilizar apenas
+
 ```
 npm start
 ```
