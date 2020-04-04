@@ -3,10 +3,12 @@
 }
 
 body{
-    background: linear-gradient(#FF00FF, #4876FF);
-    font-family: 'Baloo Da 2', cursive;
-    color: #483D8B;    
-    text-align: center;
+    background-image: url(https://img.freepik.com/vetores-gratis/cadeado-com-fechadura-seguranca-de-dados-pessoais-ilustra-dados-ciberneticos-ou-ideia-de-privacidade-de-informacoes-cor-azul-resumo-oi-velocidade-internet-tecnologia_43778-440.jpg?size=626&ext=jpg);
+    background-size: 750px;
+    font-family:'Acme', sans-serif;
+    color: white;
+    text-align: center;    
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 }
 
 h1{
@@ -50,8 +52,8 @@ input[type=number]{
     border: 1px solid;
     width: 150px;
     padding: 0.3%;
-    font-family: 'Baloo Da 2', cursive;
-    color: #551A8B;
+    font-family: 'Acme', sans-serif;
+    color: black;
 }
 
 #decode{
@@ -61,6 +63,6 @@ input[type=number]{
     border: 1px solid;
     width: 150px;
     padding: 0.3%;
-    font-family: 'Baloo Da 2', cursive;
-    color: #551A8B;
+    font-family: 'Acme', sans-serif;
+    color: black;
 }
