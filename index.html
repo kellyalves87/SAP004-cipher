@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>CodiDecodeAki!</h1>
+    </header>
+
+    <p>Utilize este espaço para codificar e decodificar suas senhas usando a
+    cifra de césar.</p>
+
+    <h1>Maaass... o que é Cifra de César?</h1>
+
+    <p>A <strong>Cifra de César</strong> é uma técnica de criptografia na qual a
+    letra de um texto a ser criptografado é substituída <br> por outra letra presente 
+    no alfabeto, porém deslocada em um certo número de posições à esquerda ou à direita.</p>
+
+    <section class="enterYourPhrase">
+      <h2>Insira aqui a sua senha</h2>
+      <textarea name="password" id="senha" cols="30" rows="5"></textarea>         
+    </section>
+
+    <section class="alphabetAsc">
+      <h2>Deslocamento</h2>
+      <input type="number" name="numberOfHouses" min= "0" id="offset"> 
+    </section>
+
+    <section id="cipher" class="cipher">
+      <h2>Escolha uma opção</h2>
+      <button id="encode" class="botao-principal">Codificar</button>                
+      <button id="decode" class="botao-principal">Decodificar</button>
+    </section>
+
+    <section class="codeDecode">
+      <h2>Resultado</h2>
+      <textarea id="answerPassword" readonly="true" cols="30" rows="5"></textarea>  
+    </section>
+
+               
+    <script src="index.js" type="module"></script>
+
+  </body>
+</html>
