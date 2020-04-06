@@ -1,7 +1,11 @@
+import validation from './validation.js';
+
 const cipher = {
 
   encode: (offset, phrase) => {
 
+    validation(offset, phrase);
+    
     let done = "";
 
     for (let contador = 0; contador < phrase.length; contador++) {
