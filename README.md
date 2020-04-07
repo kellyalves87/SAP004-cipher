@@ -7,6 +7,14 @@ Projeto para criar um site que codifique e decodifique senhas com a cifra de Cé
 A Cifra de César é uma técnica de criptografia na qual a letra de um texto a ser criptografado é substituída
 por outra letra presente no alfabeto, porém deslocada em um certo número de posições à esquerda ou à direita.
 
+# Principais usuários do produto
+
+Pessoas que desejam criar uma mensagem criptografada para suas senhas e caso seja necessário, podem descriptografá-la a qualquer momento.
+
+# Objetivos do produto
+
+Criar um ambiente seguro para que o usuário possa criptografar sua senha e caso essa senha seja perdida/esquecida, pode descriptografá-la.
+
 # Tecnologias utilizadas no projeto.
 
 * HTML
