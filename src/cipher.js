@@ -24,7 +24,7 @@ const cipher = {
   },
 
 
-  //função criada para decodificar.
+  //função criada para decodificar em letra maíuscula e minuscula.
 
   decode: (offset, phrase) => {
 
