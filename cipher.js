@@ -15,7 +15,7 @@ const cipher = {
       if (encodeChar >= 65 && encodeChar <= 90) {
         let result = ((encodeChar - 65 + offset) % 26) + 65;
         done += String.fromCharCode(result);
-      } else if (encodeChar >= 97 && encodeChar <= 122) {
+      } else {
         let result = ((encodeChar - 97 + offset) % 26) + 97;
         done += String.fromCharCode(result);
       }
@@ -38,7 +38,7 @@ const cipher = {
       if (decodeChar >= 65 && decodeChar <= 90) {
         let resultD = ((decodeChar + 65 - offset) % 26) + 65;
         doneD += String.fromCharCode(resultD);
-      } else if (decodeChar >= 97 && decodeChar <= 122) {
+      } else {
 
         let upperDecodeChar = normalAlpha[counter].toUpperCase().charCodeAt();
         let resultD = ((upperDecodeChar + 65 - offset) % 26) + 65;
