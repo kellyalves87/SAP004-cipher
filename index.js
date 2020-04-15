@@ -1,14 +1,14 @@
 import cipher from './cipher.js';
 
-let phrase = document.getElementById('senha');
-let alphabetAsc = document.getElementById('offset');
-let encodeBtn = document.getElementById('encode');
-let decodeBtn = document.getElementById('decode');
+const phrase = document.getElementById('senha');
+const alphabetAsc = document.getElementById('offset');
+const encodeBtn = document.getElementById('encode');
+const decodeBtn = document.getElementById('decode');
 
 encodeBtn.addEventListener('click', function(event){
 
     event.preventDefault();
-    let textValue = cipher.encode(alphabetAsc.valueAsNumber, phrase.value);
+    const textValue = cipher.encode(alphabetAsc.valueAsNumber, phrase.value);
 
     document.getElementById('answerPassword').textContent = textValue;
 });
@@ -17,7 +17,7 @@ encodeBtn.addEventListener('click', function(event){
 decodeBtn.addEventListener('click', function(event){
 
     event.preventDefault();
-    let textValue = cipher.decode(alphabetAsc.valueAsNumber, phrase.value);
+    const textValue = cipher.decode(alphabetAsc.valueAsNumber, phrase.value);
 
     document.getElementById('answerPassword').textContent = textValue;
 });
