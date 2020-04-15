@@ -10,13 +10,13 @@ const cipher = {
 
     for (let counter = 0; counter < phrase.length; counter++) {
 
-      let encodeChar = phrase[counter].charCodeAt();
+      const encodeChar = phrase[counter].charCodeAt();
 
       if (encodeChar >= 65 && encodeChar <= 90) {
-        let result = ((encodeChar - 65 + offset) % 26) + 65;
+        const result = ((encodeChar - 65 + offset) % 26) + 65;
         done += String.fromCharCode(result);
       } else {
-        let result = ((encodeChar - 97 + offset) % 26) + 97;
+        const result = ((encodeChar - 97 + offset) % 26) + 97;
         done += String.fromCharCode(result);
       }
 
@@ -24,31 +24,31 @@ const cipher = {
     return done;
   },
   
-     //função criada para decodificar em letra maíuscula e minuscula.
-
+  
   decode: (offset, phrase) => {
 
-    let normalAlpha = phrase;
-    let doneD = "";
+    validation(offset, phrase);
+
+    let done = "";
 
     for (let counter = 0; counter < phrase.length; counter++) {
 
-      let decodeChar = normalAlpha[counter].charCodeAt();
+      const decodeChar = phrase[counter].charCodeAt();
 
       if (decodeChar >= 65 && decodeChar <= 90) {
-        let resultD = ((decodeChar + 65 - offset) % 26) + 65;
-        doneD += String.fromCharCode(resultD);
+        const result = ((decodeChar + 65 - offset) % 26) + 65;
+        done += String.fromCharCode(result);
       } else {
 
-        let upperDecodeChar = normalAlpha[counter].toUpperCase().charCodeAt();
-        let resultD = ((upperDecodeChar + 65 - offset) % 26) + 65;
-        doneD += String.fromCharCode(resultD).toLowerCase();
+        const upperDecodeChar = phrase[counter].toUpperCase().charCodeAt();
+        const result = ((upperDecodeChar + 65 - offset) % 26) + 65;
+        done += String.fromCharCode(result).toLowerCase();
         
       }
 
     }
 
-    return doneD;
+    return done;
 
   }
 
