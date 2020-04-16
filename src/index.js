@@ -5,16 +5,14 @@ const alphabetAsc = document.getElementById("offset");
 const encodeBtn = document.getElementById("encode");
 const decodeBtn = document.getElementById("decode");
 
-encodeBtn.addEventListener("click", function (event) {
-  event.preventDefault();
+encodeBtn.addEventListener("click", function () {
   const textValue = cipher.encode(alphabetAsc.valueAsNumber, phrase.value);
 
-  document.getElementById("answerPassword").textContent = textValue;
+  document.getElementById("answer-password").textContent = textValue;
 });
 
-decodeBtn.addEventListener("click", function (event) {
-  event.preventDefault();
+decodeBtn.addEventListener("click", function () {
   const textValue = cipher.decode(alphabetAsc.valueAsNumber, phrase.value);
 
-  document.getElementById("answerPassword").textContent = textValue;
+  document.getElementById("answer-password").textContent = textValue;
 });

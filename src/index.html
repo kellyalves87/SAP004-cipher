@@ -16,32 +16,33 @@
     </header>
 
     <main>
-      <p>
-        Utilize este espaço para codificar e decodificar suas senhas usando a
-        cifra de césar.
-      </p>
-
-      <h1>Maaass... o que é Cifra de César?</h1>
-
-      <p>
-        A <strong>Cifra de César</strong> é uma técnica de criptografia na qual
-        a letra de um texto a ser criptografado é substituída <br />
-        por outra letra presente no alfabeto, porém deslocada em um certo número
-        de posições à esquerda ou à direita.
-      </p>
-
-      <h1>Vamos começar?</h1>
-
-      <section class="enterYourPhrase">
-        <h2>Insira aqui a sua senha</h2>
-        <textarea name="password" id="senha" cols="30" rows="5"></textarea>
-        <p id="phrasePass"></p>
+      <section class="paragraph">
+        <p>
+          Utilize este espaço para codificar e decodificar suas senhas usando a
+          cifra de césar.
+        </p>
+        <h1>Maaass... o que é Cifra de César?</h1>
+        <p>
+          A <strong>Cifra de César</strong> é uma técnica de criptografia na
+          qual a letra de um texto a ser criptografado é substituída
+        </p>
+        <p>
+          por outra letra presente no alfabeto, porém deslocada em um certo
+          número de posições à esquerda ou à direita.
+        </p>
+        <h1>Vamos começar?</h1>
       </section>
 
-      <section class="alphabetAsc">
+      <section class="enter-your-phrase">
+        <h2>Insira aqui a sua senha</h2>
+        <textarea name="password" id="senha" cols="30" rows="5"></textarea>
+        <p id="phrase-pass"></p>
+      </section>
+
+      <section class="alphabet-asc">
         <h2>Deslocamento</h2>
-        <input type="number" name="numberOfHouses" min="0" id="offset" />
-        <p id="moveHouses"></p>
+        <input type="number" name="number-of-houses" min="0" id="offset" />
+        <p id="move-houses"></p>
       </section>
 
       <section id="cipher" class="cipher">
@@ -50,10 +51,10 @@
         <button id="decode" class="botao-principal">Decodificar</button>
       </section>
 
-      <section class="codeDecode">
+      <section class="code-decode">
         <h2>Resultado</h2>
         <textarea
-          id="answerPassword"
+          id="answer-password"
           readonly="true"
           cols="30"
           rows="5"
