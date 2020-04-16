@@ -1,49 +1,56 @@
 import validation from "./validation.js";
 
+const firstMinLetterAsc = 65;
+const lastMinLetterAsc = 90;
+const firstMaxtLetterAsc = 97;
+const numberLetterAlpha = 26;
+
 const cipher = {
   encode: (offset, phrase) => {
     validation(offset, phrase);
 
-    let firsMintLetterAsc = 65;
-    let lastMinLetterAsc = 90;
-    let fisrtMaxtLetterAsc = 97;
-    let numberLetterAlpha = 26;
     let done = "";
 
-    for (let counter = 0; counter < phrase.length; counter++) {
-      const encodeChar = phrase[counter].charCodeAt();
+    Array.from(phrase).forEach((letter) => {
+      const encodeChar = letter.charCodeAt();
 
-      if (encodeChar >= firsMintLetterAsc && encodeChar <= lastMinLetterAsc) {
-        const result = ((encodeChar - firsMintLetterAsc + offset) % numberLetterAlpha) + firsMintLetterAsc;
+      if (encodeChar >= firstMinLetterAsc && encodeChar <= lastMinLetterAsc) {
+        const result =
+          ((encodeChar - firstMinLetterAsc + offset) % numberLetterAlpha) +
+          firstMinLetterAsc;
         done += String.fromCharCode(result);
       } else {
-        const result = ((encodeChar - fisrtMaxtLetterAsc + offset) % numberLetterAlpha) + fisrtMaxtLetterAsc;
+        const result =
+          ((encodeChar - firstMaxtLetterAsc + offset) % numberLetterAlpha) +
+          firstMaxtLetterAsc;
         done += String.fromCharCode(result);
       }
-    }
+    });
+
     return done;
   },
 
   decode: (offset, phrase) => {
     validation(offset, phrase);
 
-    let firsMintLetterAsc = 65;
-    let lastMinLetterAsc = 90;
-    let numberLetterAlpha = 26;
     let done = "";
 
-    for (let counter = 0; counter < phrase.length; counter++) {
-      const decodeChar = phrase[counter].charCodeAt();
+    Array.from(phrase).forEach((letter) => {
+      const decodeChar = letter.charCodeAt();
 
-      if (decodeChar >= firsMintLetterAsc && decodeChar <= lastMinLetterAsc) {
-        const result = ((decodeChar + firsMintLetterAsc - offset) % numberLetterAlpha) + firsMintLetterAsc;
+      if (decodeChar >= firstMinLetterAsc && decodeChar <= lastMinLetterAsc) {
+        const result =
+          ((decodeChar + firstMinLetterAsc - offset) % numberLetterAlpha) +
+          firstMinLetterAsc;
         done += String.fromCharCode(result);
       } else {
-        const upperDecodeChar = phrase[counter].toUpperCase().charCodeAt();
-        const result = ((upperDecodeChar + firsMintLetterAsc - offset) % numberLetterAlpha) + firsMintLetterAsc;
+        const upperDecodeChar = letter.toUpperCase().charCodeAt();
+        const result =
+          ((upperDecodeChar + firstMinLetterAsc - offset) % numberLetterAlpha) +
+          firstMinLetterAsc;
         done += String.fromCharCode(result).toLowerCase();
       }
-    }
+    });
 
     return done;
   },
